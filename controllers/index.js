@@ -2,9 +2,9 @@
 
 module.exports = {
   getIndex(req, res, next) {
-    res.send('INDEX');
+    res.render('index', { title: 'YumBook | Home' });
   },
   getAbout(req, res, next) {
-    res.send('ABOUT');
+    res.render('about', { title: 'YumBook | About' });
   }
 }
